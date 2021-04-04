@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Person{
+    string first_name = 1;
+    string last_name = 2;
+    int32 age = 3;
+    float weight = 4;
+    repeated string addresses = 5;
+    enum Gender{
+        Unknown = 0;
+        FeMale = 1;
+        Male =2;
+    }
+
+    Gender gender = 6;
+}
+
